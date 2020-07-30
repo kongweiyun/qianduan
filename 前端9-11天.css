@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body>div{
+    /* width: 100%; */
+    height: 800px;
+    /* border: 1px solid red; */
+}
+#hello{
+    background: url(../img/t.jpg) no-repeat;
+    background-size: cover;
+    background-size:auto  1000px;
+}
+#hello #wol,#hello div{
+    text-align: center;
+    color: aliceblue;
+}
+#hello div{
+    margin-bottom: 70px; 
+}
+#hello #wol{
+    padding-top: 100px;
+    margin-bottom: 55px;  
+    font-size: 35px;
+}
+#hello div h4{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+#hello #hello_account{
+    margin: auto;
+    width: 800px;
+    height: 200px;
+    border: 1px solid #847D73;
+}
+#hello #hello_account form input{
+    width: 200px;
+    height: 25px;
+    margin-right: 20px;
+    border: 1px solid #847D73;
+    background-color:transparent;
+    border-radius: 5px;
+    color: #FFFFFF;
+    
+}
+#hello #hello_account form .int{
+    width: 100px;
+    height:28px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    color: #0D0D0D;
+}
+#hello #hello_account form .fir::placeholder{
+    color:#C8C0B4;
+}
+#hello #hello_account form .sec::placeholder{
+    color: #4C4845;
+}
+#hello_account p{
+    margin-bottom: 35px;
+    font-size: 10px;
+    color: #6F6E5C;
+}
+#boatloads{
+    text-align: center;
+    background-color: #FFFFFF;
+}
+#boatloads .boatloadsfir {
+    margin-top: 30px;
+    font-size: 10px;
+    margin-bottom: 35px;
+    
+}
+#boatloads .jia{
+    font-size: 30px;
+    line-height: 40px;
+}
+#boatloads #boatli{
+    margin: 70px auto;
+    width: 1100px;
+    height: 200px;
+    /* border: 1px solid red; */
+    margin-left: 204px;
+}
+#boatloads #boatli ul li dl{
+    float: left;
+    position: relative;
+    margin: 30px 108px;
+    box-sizing: border-box;
+}
+#boatloads #boatli ul li dl dt{
+    background-image: url(../img/qianduan_03.png);
+    width: 30px;
+    height: 49px;
+    position: absolute;
+    top: 5px;
+    left: -35px;
+}
+#boatloads #boatli ul li dl dd{
+    text-align: left;
+    margin-left: 17px;
+}
+#boatloads #boatli ul li dl dd p:first-child{
+    font-size: 25px;
+}
+#boatloads #boatli ul li dl dd p:last-child{
+    width: 300px;
+}
+#supportive {
+    background: url(../img/qianduan_05.jpg) no-repeat;
+    background-size: cover;
+    color: #D3D8CF;
+    position: relative;
+}
+#supportive #supportiveleft .firr{
+    font-size: 35px;
+    position: absolute;
+    top: 185px;
+    left: 280px;
+}
+#supportive #supportiveleft .fi{
+    width: 300px;
+    position: absolute;
+    top: 350px;
+    left: 280px;
+    font-size: 10px;
+}
+#supportive #supportiveleft .secc{
+    position: absolute;
+    top: 500px;
+    left: 280px;
+}
+#supportive #supportiveleft .secc input{
+    width:220px;
+    height: 60px;
+    background-color: transparent;
+    border-radius: 5px;
+    color: #FFFFFF;
+    border: 1px solid #6B756C;
+}
+#supportive #supportiveleft .secc input:first-child{
+    background-color:#FFFFFF;
+    color: #0D0D0D;
+}
+#supportive #supportiveleft .secc input:hover{
+    cursor: pointer;
+}
+#supportiveright   .se{
+    border: 1px solid #6B756C;
+    width: 615px; 
+    height:490px; 
+    position: absolute; 
+    top: 110px ;
+    right: 0px;
+    border-radius:40px 0px 0px 40px;
+}
+#supportiveright .yuan{
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    border: 1px solid red;
+    position: absolute;
+    top: 240px;
+    left:30px ;
+}
+#supportiveright .ziliao{
+    width: 555px;
+    height: 420px;
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    color: black;
+    background-color: #FFFFFF;
+}
+#supportiveright .ziliao h2{
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 170px ;
+    margin-bottom: 15px;
+}
+#supportiveright .ziliao>p{
+    text-align: right;
+    color: #959595;
+
+} 
+#supportive #supportiveright .ziliao ul li{
+    margin: 5px;
+    float: right;
+}
+#supportive #supportiveright .ziliao ul li h3{
+    font-size: large;
+}
+#supportive #supportiveright .ziliao ul li:first-child  div{
+    width: 122px;
+    height: 90px;
+    font-size: 10px;
+}
+#supportive #supportiveright .ziliao ul li div{
+    width: 173px;
+    height: 90px;
+    color: #C9C9C9;
+    padding-left: 5px;
+    border-right: 1px solid #ECECEC;
+    border-bottom: 3px solid #ECECEC;
+    border-left: 1px solid #ECECEC;
+    box-sizing: border-box;
+    font-size: 10px;
+
+}
+#supportive #supportiveright .ziliao ul li div h3{
+color: #475861;
+margin:10px 0px;
+}
+#supportive #supportiveright .ziliao ul li div:hover{
+    border-bottom: 3px solid #ccc;
+}
+#try{
+    height: 700px;
+}
+#try #try_top{
+    text-align: center;
+    margin: 70px 0px;
+    color: #101010;
+    font-size: 30px;
+}
+#try #try_bottom li{
+    text-align: center;
+    width:290px ;
+    float: left;
+    margin: 70px;
+    color: #757575;
+}
+#try #try_bottom li>p:first-child{
+    color: #0D0D0D;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+#try #try_bottom ul{
+    width: 1408px;
+    margin:  0px auto  ;
+}
+#pic_top{
+    width: 1000px;
+    position: relative;
+    margin: 0px auto;
+}
+#pic_top .pic_topright{
+    position: absolute;
+    top:65px;
+    right: 0;
+    width: 300px;
+}
+#pic_top .pic_topright p:first-child{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#pic_top .pic_topright p:last-child{
+    color: #949494;
+}
+#pic_bottom{
+    width: 1000px;
+    position: relative;
+    margin: 0px auto;
+}
+#pic_bottom .pic_topright{
+    width: 300px;
+}
+#pic_bottom .pic_topright p:first-child{
+    margin-top: 150px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#pic_bottom .pic_topright p:last-child{
+    color: #949494;
+}
+#pic_bottom .pic_topright img{
+    position: absolute;
+    right: 0;
+    top: -50px;
+}
+#foot  {
+    background-color: #141414;
+    height: 300px;
+}
+#foot_left ul{
+float: left;
+color: #424242;
+margin: 70px 65px;
+line-height: 40px;
+}
+#foot_left ul li:first-child{
+    color: #E9E9E9;
+}
+#foot_left ul:first-child{
+    margin-left: 200px;
+}
+#foot_right p{
+    color: #545454;
+    line-height:28px ;
+}
+#foot_right p:first-child{
+    color: #E9E9E9;
+    margin-top: 74px;
+    margin-bottom: 20px;
+    padding-top: 78px;
+}
+#foot_right a{
+margin: 10px;
+}
+#foot_right .last{
+    margin-bottom: 20px;
+ }
+ /* #foot_right p:last-child{
+    margin-bottom: 20px; 
+ } */
+ #contact{
+     position: relative;
+     height: 700px;
+ }
+ #contact_left{
+     width: 450px;
+     height: 490px;
+     position: absolute;
+     border: 1px solid #E9E9E9;
+     top: 65px;
+     left: 230px;    
+ }
+ #contact_left form{
+     width: 100%;
+     margin: 30px auto;
+     text-align: center;
+ } 
+ #contact_left p{
+    font-weight: bold;
+    font-size: 10px;
+ }
+#contact_left input{
+    /* display: block; */
+    margin: 15px auto;
+    width: 250px;
+    height: 30px;
+    /* border-radius: 5px; */
+    /* border: none; */
+}
+#contact_left  textarea{
+    resize: none;
+    margin: 20px auto;
+}
+#contact #contact_left .inputlast{
+   background-color: #0D0D0D;
+   border: none;
+   color: #FFFFFF;
+   width: 260px;
+}
+#contact_right{
+    width: 450px;
+     height: 490px;
+     position: absolute;
+     border: 1px solid #E9E9E9;
+     top: 65px;
+     right: 240px; 
+}
+#contact_right p:first-child{
+    /* font-weight: bold;  */
+    margin-bottom: 15px;  
+    font-size: 40px;
+}
+#contact_rightine{
+    position: absolute;
+    top: 60px;
+    left: 60px;
+}
+#contact_rightine li:first-child{
+    margin-top: 45px;
+}
+#contact_rightine li{
+    margin: 30px 10px;
+    /* position: absolute; */
+}
+#contact_rightine dl{
+    position: relative;
+    width: 200px;
+    height: 50px;
+}
+#contact_rightine dt{
+    position: absolute;
+    background-image: url(../img/qianduan_18.png);
+    width: 24px;
+    height: 19px;
+    top: 5px;
+    left: 0px;
+}
+#contact_rightine dd{
+    position: absolute;
+    top: 0;
+    left: 30px;
+}

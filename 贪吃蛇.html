@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,div{
+            margin: 0;
+            padding: 0;
+        }
+        #main{
+            width: 700px;
+            height:700px;
+            margin: 50px auto;
+        }
+        #map{
+        width: 700px;
+        height: 700px;
+        background: url(../img/caodi.jpg);
+        position: relative;
+        }
+        button{
+            width: 100px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+     <div id="main">
+        <button>开始游戏</button>
+        <div id="map">
+        </div>
+     </div>
+    <script type="text/javascript">
+        var map = document.getElementById('map');
+        //设计蛇
+        function Snake() {//对象构造器
+            //  属性
+             this.w = 20;
+             this.h = 20; 
+             this.direction = 'right';
+             this.body = [
+                 {x:2,y:0},
+                 {x:1,y:0},
+                 {x:0,y:0}
+             ];
+             //方法
+             this.display = function(){
+                 //根据body里面的元素个数，创建对应的图片
+                 for(var i=0;i<this.body.length;i++){
+                     //创建图像
+                     var oimg = document.createElement('img');
+                     this.body[i].flag = oimg;
+                     oimg.src = '../img/she.png';
+                     //设置蛇的宽度和高度
+                     oimg.style.width = this.w + 'px';
+                     oimg.style.height = this.h +'px';
+                     //设置蛇的位置
+                     oimg.style.position = 'absolute';
+                     oimg.style.left = this.body[i].x * this.w +'px';
+                     oimg.style.top = this.body[i].y * this.h +'px';
+                     //确定位置
+                     document.getElementById('map').appendChild(oimg);
+                 }
+             }
+             //跑起来
+             this.run = function() {
+                 for(var i = this.body.length-1;i>0;i--) {
+                     this.body[i].x = this.body[i-1].x;
+                     this.body[i].y = this.body[i-1].y;
+                    //  console.log(this.body.length);
+                 }
+                 //单独处理蛇头
+                 switch(this.direction){
+                    case 'right':
+                         this.body[0].x +=1;
+                         break;
+                    case 'left':
+                         this.body[0].x -=1;   
+                         break;
+                    case 'up':
+                         this.body[0].y -=1;
+                         break;
+                    case 'down':
+                         this.body[0].y +=1;
+                         break;
+                 }
+                 //判断出界
+                 if(this.body[0].x<0||this.body[0].x>34||this.body[0].y<0||this.body[0].y>34){
+                     clearInterval(timer);
+                     alert('GAME OVER');s
+                     return false;
+                 }
+                 //判断蛇头是否能吃到食物
+                  if (this.body[0].x == food.x&&this.body[0].y == food.y) {
+                        //蛇要长一节
+                        this.body.push({x:null,y:null,flag:null});
+                        for(var i = this.body.length-1;i>0;i--) {
+                        this.body[i].x = this.body[i-1].x;
+                        this.body[i].y = this.body[i-1].y;
+                    //  console.log(this.body.length);
+                        }
+                        //删除食物
+                    document.getElementById('map').removeChild(food.flag);
+                    food.display();
+                  }
+                  for(var i=3;i<this.body.length;i++){
+                    if(this.body[0].x == this.body[i].x && this.body[0].y == this.body[i].y){
+                        clearInterval(timer);
+                        alert('傻子你怎么能吃自己呢！');
+                        return false;
+                    }
+                  }
+                 
+                 for(var i=0;i<this.body.length;i++){
+                     if(this.body[i].flag != null){
+                         document.getElementById('map').removeChild(this.body[i].flag);
+                     } 
+                 }
+                  this.display();
+             } 
+         } 
+        //设计食物
+        function Food(){
+              this.w = 20;
+              this.h = 20;
+              this.display = function(){
+                  var oimg = document.createElement('img');
+                  this.flag = oimg;
+                  oimg.src = '../img/meizi1.png';
+                  oimg.style.width = this.w + 'px'
+                  oimg.style.height = this.h + 'px'
+                  this.x = Math.floor(Math.random() * 35);
+                  this.y = Math.floor(Math.random() * 35);
+                  oimg.style.position = 'absolute';
+                  oimg.style.left = this.x * this.w + 'px';
+                  oimg.style.top = this.y * this.h +'px';
+                  document.getElementById('map').appendChild(oimg);
+              }
+          }
+        var snake = new Snake();
+        snake.display();
+        var food = new Food()
+        food.display();
+
+        var oBtn = document.getElementsByTagName("button");
+        var timer = null;
+        oBtn[0].onclick = function(){
+        clearInterval(timer);
+        timer = setInterval("snake.run()",200);
+         }
+         //给body绑定键盘事件上下左右
+          document.body.onkeydown = function(e){
+              var ev = e || window.event;
+              switch(ev.keyCode){
+                  case 87:
+                      if(snake.direction !='down') {
+                          snake.direction = 'up';
+                      }
+                  break;
+                  case 83:                      
+                        if(snake.direction !='up') {
+                          snake.direction = 'down';
+                      }
+                  break;
+                  case 65:
+                  if(snake.direction !='right') {
+                      snake.direction = 'left';
+                    }
+                  break;
+                  case 68:
+                    if(snake.direction !='left') {
+                      snake.direction = 'right';
+                     } 
+                  break;
+              }
+          }
+     </script>
+</body>
+</html>
