@@ -1,0 +1,32 @@
+#box4{
+    width: 500px;
+    position: relative;
+    margin: 30px auto;
+}
+.div4,.div5,.div6,.div7 {
+    width: 200px;
+    height: 200px;
+    border: 2px solid blue;
+    text-align: center;
+    line-height: 250px;
+    font-size: 25px;
+    background: red;
+    color: yellow;
+    float: left;
+    margin: 20px;
+
+}
+.div4{
+    border-top-left-radius: 40px;
+
+}               
+.div5{
+    border-top-right-radius: 20px;
+}
+.div6{
+    border-bottom-left-radius: 30px;
+
+}
+.div7{
+    border-bottom-right-radius: 20px;
+}
