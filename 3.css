@@ -1,0 +1,470 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+
+}
+ol,ul{
+    list-style-type: none;
+
+}
+a{
+    color: #666;
+    text-decoration: none;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+/* 测试部分 */
+#top,#header,#nav,#banner,#star,#accessory,#world,#serve,#after_sale,#footer{
+    height: 100px;
+    width: 100%;
+    /* border: 1px solid #000; */
+}
+.contain{
+    width: 1280px;
+    /* border: 1px solid #f00; */
+    margin: 0px auto;
+
+}
+/* 设置页面顶部的样式 */
+#top{
+    height: 5px;
+    background-color:#00925f; 
+}
+/* 设置页面头部的样式 */
+#header{
+    height: 30px;
+    background-color: #2d2d2d;
+}
+#header .xlwb{
+    width: 20px;
+    height: 17px;
+    background: url(../img/icons.png) no-repeat -47px -95px;
+}
+#header .txwb{
+    width: 20px;
+    height: 20px;
+    background: url(../img/icons.png) no-repeat -27px -92px;
+}
+#header .tel{
+    color: #17925F;
+}
+#header .header_left div{
+    float: left;
+    margin: 5px 10px 0px;
+}
+#header ul li {
+    float: left;
+    line-height: 30px;
+}
+#header li a{
+    color: #B2B2B2;
+    font-size: 14px;
+    border-right: 1px solid #B2B2B2;
+    padding: 0px 15px;
+}
+#header li a:hover{
+    color: #00925f;
+}
+#header .shop_car a{
+    border: none;
+    padding-left: 8px;
+}
+#header .shop_car span{
+    display: inline-block;
+    width: 19px;
+    height: 16px;
+    vertical-align: middle;
+    margin-left: 10px;
+    background: url(../img/icons.png) no-repeat 0px -96px;
+}
+/* 设置导航栏的样式 */
+#nav{
+    height: 90px;
+    background-color: #EEEEEE;
+
+}
+#nav li{
+    float: left;
+    margin: 0px 15px;
+    line-height: 90px;
+}
+#nav li a{
+    color: #666666;
+    font-weight: bold;
+}
+#nav li a:hover{
+    color: #00925F;
+}
+/* 设置网页明星机型部分的样式 */
+#star{
+    height: 700px;
+    background-color: #f2f2f2;
+}
+
+#star .star_top{
+    text-align: center;
+    margin: 10px;
+}
+#star ul{
+    width: 1263px;
+    margin: 10px auto;
+}
+#star li {
+    width: 300px;
+    float: left;
+    border-bottom: 4px solid #DFDFDF;
+    transition: all .3s;
+
+}
+#star li:hover{
+    border-bottom: 4px solid #4FB59D;
+    transform: translateY(-10px);
+}
+#star li img{
+    width: 300px;
+}
+#star li h2{
+    text-align: center;
+    margin: 10px 0px;
+
+}
+#star li p{
+    text-align: center;
+    margin: 10px 0px;
+    font-size: 12px;
+    color: #BDBDBD;
+}
+#star .money{
+    color: #00925F;
+    font-size: 14px;
+}
+#star li span{
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../img/icons-1.png) no-repeat -177px -1014px;
+}
+#star .line{
+    width: 0px;
+    height: 540px;
+    border-left: 1px solid #EAEAEA;
+    margin: 0PX 10px;
+}
+/* 设置精选配件部分样式 */
+#accessory{
+    height: 950px;
+    background-color: F6F6F6;
+    overflow: hidden;
+}
+#accessory .acc_top{
+    text-align: center;
+}
+#accessory .acc_main{
+    width: 1150px;
+    margin: 10px auto;
+}
+#accessory .acc_left{
+    width: 530px;
+    height: 950px;
+    /* border: 2px solid #000; */
+
+}
+#accessory .acc_left>div{
+    float: left;
+    border-bottom: 3px solid #EAEAEA;
+    margin: 7px;
+    transition: all .3s;
+
+}
+#accessory .acc_left>div:hover{
+    border-bottom: 3px solid #00925f;
+    transform: translateY(-10px);
+}
+#accessory .acc_left img{
+    width: 250px;
+}
+#accessory .acc_left>div:last-child img{
+    width: 520px;
+}
+#accessory .acc_all{
+    width: 250px;
+    height: 250px;
+    border: 3px solid #EAEAEA;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+#accessory .acc_all p:first-child{
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+
+}
+#accessory .acc_all li{
+    float: left;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+#accessory .acc_all li:hover{
+    color: #00925F;
+}
+#accessory .acc_all .line{
+    width: 150px;
+    height: 0;
+    border-top: 1px solid #ccc;
+    clear: both;
+    margin: 15px auto;
+}
+#accessory .acc_all p:last-child{
+    text-align: center;
+}
+#accessory .acc_all p:last-child:hover{
+    color: #00925F;
+}
+#accessory .acc_all span{
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../img/icons-1.png) no-repeat -177px -1014px;
+    margin-left: 10px;
+}
+#accessory .acc_main .acc_left div:last-child{
+    padding-bottom: 75px;
+}
+#accessory .acc_right{
+    width: 600px;
+    height: 950px ;
+
+}
+#accessory .acc_right div{
+    float: left;
+    margin: 10px;
+    border-bottom: 3px solid #EAEAEA;
+    transition: all .3s;
+}
+#accessory .acc_right div:hover{
+    border-bottom: 3px solid #00925F;
+    transform: translateY(-10px);
+}
+#accssory .acc_right img{
+    width: 250px;
+
+}
+#accessory .acc_right div:first-child img{
+    width: 600px;
+    height: 250px;
+
+}
+#accessory .acc_right div:last-child img
+{
+    height: 272px;
+}
+/* 设置精选oppo部分的样式 */
+#world {
+    height: 700px;
+    /* clear: both; */
+    overflow: hidden;
+    background-color:#EAEAEA ;
+
+}
+#world  .world_top{
+    text-align: center;
+    margin: 20px 0px ;
+
+
+}
+#world  .world_main{
+    width: 1214px;
+    margin: 10px auto;
+}
+#world .world_left{
+    width: 800px;
+
+}
+#world .world_left div{
+    float: left;
+    margin: 10px;
+    border-bottom: 3px solid #EAEAEA;
+    transition: all .3s;
+}
+#world .world_left div:hover{
+    border-bottom: 3px solid #00925f;
+    transform:translateY(-10px);
+}
+#world .world_right{
+    width: 400px;
+    height: 566px;
+    background-color:#fff ;
+    margin-top: 10px;
+}
+#world .world_right img{
+    height: 100px;
+}
+#world .world_right .world_title{
+    height: 60px;
+}
+#world .world_right .world_title div{
+    width: 200px;
+    height: 60px ;
+    background-color: #EAEAEA;
+    text-align: center;
+    line-height: 60px;
+    float: left;
+    border-top: 3px solid #EAEAEA;
+}
+#world .world_right .world_title div:first-child{
+    border-top: 3px solid #00925f;
+    background-color: #fff;
+
+}
+#world .world_right ul li{
+    background-color:#EAEAEA;
+    margin: 20px 10px;
+
+}
+#world .world_right dl{
+    width: 380px;
+    height: 100px;
+    position: relative;
+    box-sizing: border-box;
+}
+#world .world_right dl dt{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+#world .world_right dl dd{
+    position: absolute;
+    top: 20px;
+    left: 140px;
+
+}
+/* 设置服务部分样式 */
+#serve{
+    height: 100px;
+    background-color: #fff;
+
+}
+#serve ul{
+    width: 1110px;
+    margin: 0px auto;
+    height: 99px;
+    border-bottom: 1px solid #666;
+}
+#serve dl{
+    width: 200px;
+    height: 100px;
+    /* border: 1px solid #000000; */
+    position: relative;
+}
+#serve dt{
+    width: 41px;
+    height: 41px;
+    background: url(../img/icons.png) no-repeat 0px -44px;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+
+}
+#serve dl .dd1{
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    font-weight: bold;
+}
+#serve dl .dd2{
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    color: #aaaaaa;
+    font-size: 12px;
+
+}
+#serve li {
+    float: left;
+    margin: 0px 10px;
+    transition: all .3s;
+}
+#serve li:hover{
+    transform: translateY(-10px);
+}
+/* #serve ul{
+    width: 1110px;
+    margin: 0px auto;
+    height: 99px;
+    border-bottom: 1px solid #666;
+} */
+/* 设置页面售后服务部分样式 */
+#after_sale{
+    height: 200px;
+    background-color: #fff;
+    margin: 0px auto;
+    padding-top: 20px;
+}
+/* #after_sale ul{ 
+    width: 1110px;
+} */
+#after_sale li {
+    width: 140px;
+    float: left;
+    text-align:center;
+    margin: 0px 20px;
+}
+#after_sale ol>li{
+    line-height: 30px;
+}
+#after_sale ol>li:first-child a{
+    font-weight: bold;
+
+}
+#after_sale .xlwb{
+    width: 20px;
+    height: 17px;
+    background: url(../img/icons.png) no-repeat -47px -95px;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+/* 页面底部样式 */
+#footer {
+    height: 40px;
+    background-color: #2d2d2d;
+
+}
+#footer p{
+    line-height: 40px;
+    text-align: center;
+}
+#footer p span{
+    color: #828282;
+    margin: 0px 430px 0px 20px;
+
+}
+#footer  p a{
+    color: #fff;
+    margin: 0px 10px;
+}
+#footer  p a:hover{
+    color: #00925f;
+}
+
+
+
+
+
+
+
+
+
+
